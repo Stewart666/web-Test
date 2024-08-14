@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Optional: Include jQuery and Popper.js for Bootstrap's JavaScript plugins -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar-custom {
+            background-color: #00274d; /* Dark blue background */
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #ffffff; /* White text color */
+        }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #66b3ff; /* Light blue color on hover */
+        }
+
+        .dropdown-menu {
+            background-color: #00274d; /* Dark blue background for dropdowns */
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: #ffffff; /* White text color in dropdown */
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #003366; /* Slightly lighter blue on hover */
+            color: #ffffff; /* White text color on hover */
+        }
+        
+        /* Footer styles */
+        .footer {
+            background-color: #00274d;
+            color: #ffffff;
+            padding: 60px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #66b3ff;
+        }
+
+        .footer .footer-heading {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer .social-icons i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #ffffff;
+        }
+
+        .footer .social-icons i:hover {
+            color: #66b3ff;
+        }
+
+        .footer-bottom {
+            background-color: #001f3f;
+            color: #aaaaaa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .designer-info {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">BusTon</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="imgs/manu.png" alt="icon" style="width: 30px;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+                <a class="nav-link" href="#business-offered">Services <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgs/buse1.jpg" class="d-block w-100" alt="First slide" style="height: 560px;">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/buse2.jpg" class="d-block w-100" alt="Second slide" style="height: 560px;">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/buse3.jpg" class="d-block w-100" alt="Third slide" style="height: 560px;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="imgs/buse3.jpg" class="img-fluid rounded" alt="About Image">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p class="lead">We are a dedicated team committed to providing the best services in the industry. Our mission is to deliver high-quality solutions that meet the needs of our clients.</p>
+                <p>Founded in 1994, our company has grown to become a trusted name in the industry. We pride ourselves on our commitment to excellence and our ability to adapt to the changing needs of our clients.</p>
+                <p>Our team of experts works tirelessly to ensure that every project is completed to the highest standards, and we are always looking for new and innovative ways to serve our clients better.</p>
+                <a href="#team" class="btn btn-primary mt-3">Meet the Team</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imgs/haika.jpg" class="card-img-top" alt="Team Member 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Edna Emmanuel</h5>
+                        <p class="card-text">CEO & Founder</p>
+                        <p class="card-text">Edna is the visionary behind our company and has over 20 years of experience in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imgs/reynold.jpeg" class="card-img-top" alt="Team Member 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Reynold Milton</h5>
+                        <p class="card-text">Chief Technology Officer</p>
+                        <p class="card-text">Reynold leads our technology team, driving innovation and ensuring we stay ahead of the curve.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imgs/stewart.jpg" class="card-img-top" alt="Team Member 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stewart Milton</h5>
+                        <p class="card-text">Chief Operating Officer</p>
+                        <p class="card-text">Stewart oversees our operations, ensuring that everything runs smoothly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- History of Our Buses Section -->
+<section id="history" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">History of Our Buses</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>1940s: The Beginning</h4>
+                <time>1945</time>
+                <img src="imgs/Pen.svg" alt="1940s Bus" class="img-fluid mb-3" style='width: 30px;'>
+                <p>Our journey began in the 1940s with a small fleet of buses that served the local community. These buses were the first step in what would become a long tradition of reliable and safe transportation.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>1960s: Expansion and Growth</h4>
+                <time>1963</time>
+                <img src="imgs/Pen.svg" alt="1960s Bus" class="img-fluid mb-3" style='width: 30px;'>
+                <p>During the 1960s, we expanded our fleet and routes, introducing new and modern buses that improved comfort and efficiency. This era marked significant growth for our company.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>1980s: Innovation and Modernization</h4>
+                <time>1985</time>
+                <img src="imgs/Pen.svg" alt="1980s Bus" class="img-fluid mb-3" style='width: 30px;'>
+                <p>The 1980s brought technological advancements to our fleet, including the introduction of more fuel-efficient buses and improved safety features. We continued to innovate to meet the needs of our passengers.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>2000s: A New Era of Sustainability</h4>
+                <time>2005</time>
+                <img src="imgs/Pen.svg" alt="2000s Bus" class="img-fluid mb-3" style='width: 30px;'>
+                <p>In the 2000s, we committed to sustainability by introducing eco-friendly buses that reduced our carbon footprint. This move was part of our ongoing effort to protect the environment while providing excellent service.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>2020s: The Future of Transportation</h4>
+                <time>2023</time>
+                <img src="imgs/Pen.svg" alt="2020s Bus" class="img-fluid mb-3" style='width: 30px;'>
+                <p>Today, we continue to lead the way with state-of-the-art buses that feature the latest technology, ensuring that our passengers enjoy a safe, comfortable, and efficient journey every time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Business Offered Section -->
+<section id="business-offered" class="business-offered">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h5 class="card-title">Public Transportation</h5>
+                        <p class="card-text">We provide reliable and efficient public transportation services across the city, ensuring safe and timely travel for all passengers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-shuttle-van"></i>
+                        </div>
+                        <h5 class="card-title">Private Charters</h5>
+                        <p class="card-text">Our private charter services are perfect for group outings, corporate events, and special occasions, offering comfortable and flexible travel options.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h5 class="card-title">School Transportation</h5>
+                        <p class="card-text">We offer safe and reliable school transportation services, ensuring students get to and from school comfortably and on time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5 class="card-title">Bus Maintenance</h5>
+                        <p class="card-text">Our expert maintenance services ensure that our fleet of buses is always in top condition, providing safe and smooth rides for all passengers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <h5 class="card-title">Airport Shuttles</h5>
+                        <p class="card-text">Our airport shuttle services offer convenient and stress-free transportation to and from the airport, ensuring you arrive on time for your flight.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <div class="icon mb-3">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h5 class="card-title">Tour Services</h5>
+                        <p class="card-text">Explore the city with our guided tour services, offering a comfortable and informative experience for tourists and locals alike.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="footer-heading">Company Name</h5>
+                <p>Providing reliable and efficient transportation services since 1945. We are committed to delivering the highest standards of service to our customers.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#business-offered">Services</a></li>
+                    <li><a href="+255-71024431">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="footer-heading">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"><img src="imgs/facebook.svg" alt="facebook" style="width: 30px;"></i></a>
+                    <a href="#"><i class="fab fa-twitter"><img src="imgs/x.svg" alt="twitter" style="height: 30px;"></i></a>
+                    <a href="#"><i class="fab fa-instagram"><img src="imgs/instagram.svg" alt="instagram" style="height: 30px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row designer-info">
+            <div class="col-md-12 text-center">
+                <p>Website designed by <strong>stewart milton</strong>. Passionate about creating beautiful and functional websites. Contact: <a href="stewartmiltonn@gmail.com">stewratmiltonn@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Company Name. BusTon.</p>
+    </div>
+</footer>
+
+
+ <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+  </body>
+</html>
